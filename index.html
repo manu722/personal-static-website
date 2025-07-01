@@ -1,254 +1,216 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manu Lalu</title>
-     <link rel="icon" href="https://media-exp3.licdn.com/dms/image/C4E03AQG5XDjrdr9xAQ/profile-displayphoto-shrink_200_200/0/1621603659937?e=1629936000&v=beta&t=ZdfbPeX4znLVWxKlEUXD_quDEr15C2AW0rx2z4ygSBg" type="image/gif" sizes="16x16"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/392246a050.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header class="bg-dark fixed-top p-2">
-    <div class="row text-white">
-        <div class="col-md-6 col-9 p-3 ">
-            <h2>Manu Lalu</h2>
-
+    <div id="header">
+        <div class="container">
+            <nav>
+                 <h1><span style="color: red;">M</span>anu.</h1>
+                <ul id="sidemenu">
+                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                   
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Manu Lalu</span> <br> From Kochi,India</h1>
+            </div>
         </div>
-        <div class="col-md-6 col-3 my-auto">
-            <nav class="navbar navbar-expand-lg navbar-light ">
-                
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item active">
-                      <a class="nav-link text-white" href="#home">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#Experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#contact">Contact</a>
-                    </li>
-                    
-                    
-                  </ul>
-                  
+    </div>
+
+     <!-- ---------------------------------------------about--------------------------------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+             <div class="row">
+                <div class="about-col-1">
+                     <img src="images/user.jpg" alt="">
                 </div>
-              </nav>
-
-        </div>
-    </div>
-</header>
-<section  id="home" style="padding-top: 10em;">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                 <img class="img-fluid rounded-circle " src="images/dp.jpg" alt="image">
-            </div>
-            <div class="col-md-6">
-                <h4 class="pt-5"> Angular Developer at Tata Consultancy Services</h4>
-                    <h4>Kochi, Kerala, India </h4>
-                    <p>“Technology is best when it brings people together.”</p>
-
-            </div>
-        </div>
-    </div>
-</section>
-<section class="bg-light p-5" id="skills">
-    <div class="container">
-        <h1 class="text-center">Skills</h1>
-        <div class="row">
-             
-          <div class="col-md-4">
-            <div class="card " >
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsW4A3eLv2Gys6EFqk4x6Jq066zKKWQY06lQ&usqp=CAU" class="card-img-top " alt="">
-            <div class="card-body">
-              <h5 class="card-title">Angular</h5>
-              <p class="card-text"></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card " >
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsW4A3eLv2Gys6EFqk4x6Jq066zKKWQY06lQ&usqp=CAU" class="card-img-top " alt="">
-          <div class="card-body">
-            <h5 class="card-title">Bootstrap</h5>
-            <p class="card-text"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card " >
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsW4A3eLv2Gys6EFqk4x6Jq066zKKWQY06lQ&usqp=CAU" class="card-img-top " alt="">
-        <div class="card-body">
-          <h5 class="card-title">TypeScript</h5>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-        <div class="row mt-3">
-            <div class="col-md-4">
-                <div class="card " >
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsW4A3eLv2Gys6EFqk4x6Jq066zKKWQY06lQ&usqp=CAU" class="card-img-top " alt="">
-                <div class="card-body">
-                  <h5 class="card-title">Web Designing</h5>
-                  <p class="card-text"></p>
+                <div class="about-col-2">
+                     <h1 class="sub-title">About Me</h1>
+                     <p></p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                            
+                        </ul>
+                     </div>
+                      <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>                            
+                        </ul>
+                     </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>Designing Web/App interfaces</li>
+                            <li><span>2018 - 2022</span><br>Web App Development</li>                            
+                        </ul>
+                     </div>
                 </div>
-              </div>
-            </div>
-        
-
-        <div class="col-md-4">
-            <div class="card " >
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsW4A3eLv2Gys6EFqk4x6Jq066zKKWQY06lQ&usqp=CAU" class="card-img-top " alt="">
-            <div class="card-body">
-              <h5 class="card-title">Java programming</h5>
-              <p class="card-text"></p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-4">
-            <div class="card " >
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsW4A3eLv2Gys6EFqk4x6Jq066zKKWQY06lQ&usqp=CAU" class="card-img-top " alt="">
-            <div class="card-body">
-              <h5 class="card-title">Project management</h5>
-              <p class="card-text"></p>
-            </div>
-          </div>
+             </div>
         </div>
     </div>
 
-    </div>
-</section>
-                                         <!-- Experiences -->
-<section class="p-5 bg-white" id="Experience">
-  <div class="container">
-    <h1 class="text-center">Experiences</h1>
-    <div class="row">
-
-      <div class="col-md-4">
-        <div class="card " style="height: 25em;">
-        <img src="images/TCS-Logo-Colour-RGB-copy.jpg" alt="" height="90em">
-        <div class="card-body">
-          <h5 class="card-title">Angular Developer</h5>
-          <p class="card-text">Tata Consultancy Services</p>
+    <!-------------------------------------------------Services------------------------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>fdf dfdfdf dfsdfdsfdsf fd</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>fdf dfdfdf dfsdfdsfdsf fd</p>
+                    <a href="#">Learn more</a>
+                </div><div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>fdf dfdfdf dfsdfdsfdsf fd</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
+
+    <!-------------------------------------------------portfolio------------------------------------------------------------------->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                  <div class="work">
+                    <img src="images/work-2.png" alt="work2">
+                      <div class="layer">
+                        <h3>Service center App</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                  <div class="work">
+                    <img src="images/work-3.png" alt="work3">
+                      <div class="layer">
+                        <h3>E-commerce Site</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
      </div>
 
-      <div class="col-md-4 ">
-            <div class="card " style="height: 25em;">
-            <img src="images/giphy.gif" class="card-img-top " alt="">
-            <div class="card-body ">
-              <h5 class="card-title">Project management</h5>
-              <p class="card-text">Hack Club Asiet</p>
+    <!-------------------------------------------------contact------------------------------------------------------------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>manulalu722@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9961993500</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
             </div>
-          </div>
         </div>
-         
-
-        <div class="col-md-4">
-          <a href="https://adishankara.ac.in/" style="text-decoration: none;">
-            <div class="card " style="height: 25em;">
-            <img src="https://1.bp.blogspot.com/-DWVUvqis3f4/WidUTfjb8cI/AAAAAAAA13s/ef5xAjlEC4QBZJd4BY9Un_B2joU9pYVDACLcBGAs/s1600/Adi%2BShankara%2BLogo.png" class="card-img-top " alt="">
-            <div class="card-body">
-              <h5 class="card-title">Computer Student</h5>
-              <p class="card-text">Adishankara Institute of Engineering and technology</p>
-            </div>
-          </div>
-          </a>
+        <div class="copyright">
+             <p>Copyright &copy; Manu.</p>
         </div>
-      
+     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
 
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
 
-    </div>
-    <div class="row mt-2">
-      <div class="col-md-4">
-        <div class="card " style="height: 25em;">
-        <img src="https://d1hbpr09pwz0sk.cloudfront.net/logo_url/icube-design-studios-e8165e84" alt="" height="90em">
-        <div class="card-body">
-          <h5 class="card-title">Internship</h5>
-          <p class="card-text">iCube Design Studio</p>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
-<section class="p-5 bg-light" id="contact">
-  <div class="container">
-    <h1 class="text-center">Contact Me</h1>
-    <div class="row">
-      <div class="col-md-12">
-      <form id="gform" >
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Name</label>
-      <input type="text" class="form-control" id="" placeholder="Name">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">place</label>
-      <input type="text" class="form-control" id="" placeholder="place">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Mobile</label>
-      <input type="tel" class="form-control" id="inputEmail4" placeholder="Mobile">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">Message</label><br>
-    <textarea   cols="30" rows="10" placeholder="Type your message here..."></textarea>
-  </div>
-    <input type="submit" value="submit">
-        </form>
-        </div>
-    </div>
-  </div>
-</section>
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
 
-<footer class="bg-dark">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center text-white">
-        <a href="https://www.facebook.com/manu.lalu.336/"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/manu_lalu7/"><i class="fab fa-instagram-square"></i></a>
-        <a href="https://www.linkedin.com/in/manu-lalu-324965212/"><i class="fab fa-linkedin"></i></a>
+    </script>
 
+    <script>
 
-        <p >copyrights</p>
+        var sidemenu = document.getElementById("sidemenu");
 
-      </div>
-    </div>
-  </div>
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
 
-</footer>
+         function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
 
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx7ueURnYo94US3y5euroVBBu-woZNleoXTIEEIboPV2p8cvrsOgUu6xj2Tg6MS9rD7/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
 
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/5e356beb54.js" crossorigin="anonymous"></script>
 </body>
 </html>
