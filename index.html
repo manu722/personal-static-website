@@ -3,214 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Manu Lalu — UI/UX Designer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/392246a050.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <!-- ======= HEADER ======= -->
     <div id="header">
         <div class="container">
             <nav>
-                 <h1><span style="color: red;">M</span>anu.</h1>
+                <h1 class="logo"><span>M</span>anu.</h1>
                 <ul id="sidemenu">
-                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                   
+                    <i class="fa-solid fa-circle-xmark close-icon" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+                <div class="nav-right">
+                    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                        <i class="fa-solid fa-moon icon-moon"></i>
+                        <i class="fa-solid fa-sun icon-sun"></i>
+                    </button>
+                    <i class="fa-solid fa-bars menu-icon" onclick="openmenu()"></i>
+                </div>
             </nav>
+
             <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Manu Lalu</span> <br> From Kochi,India</h1>
+                <p class="role-tag">UI/UX Designer</p>
+                <h1>Hi, I'm <span>Manu Lalu</span><br>From Kochi, India</h1>
+                <div class="header-cta">
+                    <a href="#portfolio" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span></span>
             </div>
         </div>
     </div>
 
-     <!-- ---------------------------------------------about--------------------------------------------------------------------- -->
+    <!-- ======= ABOUT ======= -->
     <div id="about">
         <div class="container">
-             <div class="row">
+            <div class="row">
                 <div class="about-col-1">
-                     <img src="images/user.jpg" alt="">
+                    <div class="img-wrapper">
+                        <img src="images/user.jpg" alt="Manu Lalu">
+                        <div class="img-accent"></div>
+                    </div>
                 </div>
                 <div class="about-col-2">
-                     <h1 class="sub-title">About Me</h1>
-                     <p></p>
-                     <div class="tab-titles">
+                    <p class="section-label">Who I Am</p>
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-bio">I'm a passionate UI/UX Designer &amp; Developer crafting clean, intuitive digital experiences. I blend aesthetics with functionality to build products people love using.</p>
+
+                    <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
-                     </div>
-                     <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Android/ios apps</li>
-                            
-                        </ul>
-                     </div>
-                      <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2021 - Current</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web App Development</li>                            
-                        </ul>
-                     </div>
-                      <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2016</span><br>Designing Web/App interfaces</li>
-                            <li><span>2018 - 2022</span><br>Web App Development</li>                            
-                        </ul>
-                     </div>
-                </div>
-             </div>
-        </div>
-    </div>
+                    </div>
 
-    <!-------------------------------------------------Services------------------------------------------------------------------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>fdf dfdfdf dfsdfdsfdsf fd</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>fdf dfdfdf dfsdfdsfdsf fd</p>
-                    <a href="#">Learn more</a>
-                </div><div>
-                    <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>App Design</h2>
-                    <p>fdf dfdfdf dfsdfdsfdsf fd</p>
-                    <a href="#">Learn more</a>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX Design</span>Designing intuitive Web &amp; App interfaces</li>
+                            <li><span>Web Development</span>Building responsive, performant web apps</li>
+                            <li><span>App Development</span>Creating polished Android &amp; iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Present</span>UI/UX Designer — Freelance</li>
+                            <li><span>Web Development</span>Full-stack Web Application Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span>Diploma in Design</li>
+                            <li><span>2018 - 2022</span>B.Tech - Computer Science</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-------------------------------------------------portfolio------------------------------------------------------------------->
-     <div id="portfolio">
+    <!-- ======= SERVICES ======= -->
+    <div id="services">
         <div class="container">
+            <p class="section-label">What I Do</p>
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                    <h2>Web Design</h2>
+                    <p>Crafting visually stunning, responsive websites that engage visitors and drive results across all devices.</p>
+                    <a href="#" class="service-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-icon"><i class="fa-solid fa-crop-simple"></i></div>
+                    <h2>UI/UX Design</h2>
+                    <p>User-centered design that blends beautiful aesthetics with seamless, intuitive user experiences.</p>
+                    <a href="#" class="service-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-brands fa-app-store-ios"></i></div>
+                    <h2>App Design</h2>
+                    <p>Native-feeling mobile app designs for iOS and Android that delight users from first launch.</p>
+                    <a href="#" class="service-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= PORTFOLIO ======= -->
+    <div id="portfolio">
+        <div class="container">
+            <p class="section-label">Recent Work</p>
             <h1 class="sub-title">My Works</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png" alt="work1">
+                    <img src="images/work-1.png" alt="Social Media App">
                     <div class="layer">
+                        <span class="work-tag">Mobile App</span>
                         <h3>Social Media App</h3>
-                        <p></p>
+                        <p>A modern social platform with a clean, engaging UI.</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                  <div class="work">
-                    <img src="images/work-2.png" alt="work2">
-                      <div class="layer">
-                        <h3>Service center App</h3>
-                        <p></p>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Service Center App">
+                    <div class="layer">
+                        <span class="work-tag">Dashboard</span>
+                        <h3>Service Center App</h3>
+                        <p>A streamlined service management system interface.</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                  <div class="work">
-                    <img src="images/work-3.png" alt="work3">
-                      <div class="layer">
+                <div class="work">
+                    <img src="images/work-3.png" alt="E-commerce Site">
+                    <div class="layer">
+                        <span class="work-tag">Web Design</span>
                         <h3>E-commerce Site</h3>
-                        <p></p>
+                        <p>A refined shopping experience built for conversions.</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <div class="portfolio-cta">
+                <a href="#" class="btn btn-primary">See More Work</a>
+            </div>
         </div>
-     </div>
+    </div>
 
-    <!-------------------------------------------------contact------------------------------------------------------------------->
-     <div id="contact">
+    <!-- ======= CONTACT ======= -->
+    <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
+                    <p class="section-label">Let's Talk</p>
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>manulalu722@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>9961993500</p>
-                    <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <p class="contact-intro">Have a project in mind? I'd love to hear about it. Let's create something great together.</p>
+
+                    <div class="contact-details">
+                        <a href="mailto:manulalu722@gmail.com" class="contact-item">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>manulalu722@gmail.com</span>
+                        </a>
+                        <a href="tel:9961993500" class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+91 9961 993 500</span>
+                        </a>
                     </div>
-                    <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+
+                    <div class="social-icons">
+                        <a href="" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn-outline">
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
                 </div>
+
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <div class="form-group">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" rows="6" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
                     </form>
                     <span id="msg"></span>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-             <p>Copyright &copy; Manu.</p>
-        </div>
-     </div>
 
+        <div class="copyright">
+            <p>Crafted with care by <strong>Manu Lalu</strong> &copy; 2024</p>
+        </div>
+    </div>
+
+    <!-- ======= SCRIPTS ======= -->
     <script>
+        // ── Theme Toggle ──
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+            localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+        }
+        // Restore saved preference
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-mode');
+        }
+
+        // ── Tab switching ──
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
+        function opentab(tabname) {
+            for (let tablink of tablinks) tablink.classList.remove("active-link");
+            for (let tabcontent of tabcontents) tabcontent.classList.remove("active-tab");
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
 
-    </script>
-
-    <script>
-
+        // ── Mobile menu ──
         var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu(){
-            sidemenu.style.right = "0"
+        function openmenu() {
+            sidemenu.style.right = "0";
+            document.body.classList.add("menu-open");
+            document.querySelector('.menu-icon').style.display = 'none';
         }
 
-         function closemenu(){
-            sidemenu.style.right = "-200px"
+        function closemenu() {
+            sidemenu.style.right = "-100%";
+            document.body.classList.remove("menu-open");
+            document.querySelector('.menu-icon').style.display = 'block';
         }
+
+        document.querySelectorAll('#sidemenu a').forEach(link => {
+            link.addEventListener('click', closemenu);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (document.body.classList.contains('menu-open') &&
+                !sidemenu.contains(e.target) &&
+                !e.target.classList.contains('fa-bars')) {
+                closemenu();
+            }
+        });
+
+        // ── Sticky nav ──
+        window.addEventListener('scroll', () => {
+            document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 60);
+        });
+
+        // ── Scroll reveal ──
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.service-card, .work, .about-col-1, .about-col-2').forEach(el => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+
+        // ── Google Sheets form ──
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx7ueURnYo94US3y5euroVBBu-woZNleoXTIEEIboPV2p8cvrsOgUu6xj2Tg6MS9rD7/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const btn = form.querySelector('button[type="submit"]');
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(() => {
+                    msg.innerHTML = "Message sent successfully!";
+                    msg.classList.add('success');
+                    btn.textContent = 'Send Message';
+                    btn.disabled = false;
+                    setTimeout(() => { msg.innerHTML = ""; msg.classList.remove('success'); }, 5000);
+                    form.reset();
+                })
+                .catch(error => {
+                    msg.innerHTML = "Something went wrong. Please try again.";
+                    btn.textContent = 'Send Message';
+                    btn.disabled = false;
+                    console.error('Error!', error.message);
+                });
+        });
     </script>
-
-    <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbx7ueURnYo94US3y5euroVBBu-woZNleoXTIEEIboPV2p8cvrsOgUu6xj2Tg6MS9rD7/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message sent successfully"
-        setTimeout(function(){
-            msg.innerHTML=""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
 
 </body>
 </html>
