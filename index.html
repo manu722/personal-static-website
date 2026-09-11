@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manu Lalu — UI/UX designer and developer in Kochi. Crafting clean, intuitive digital experiences for web and mobile.">
+    <title>Manu Lalu — UI/UX Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/392246a050.js" crossorigin="anonymous"></script>
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem('theme') === 'light') {
+                    document.documentElement.classList.add('light-mode');
+                }
+            } catch (e) {}
+        })();
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+    <div class="preloader" id="preloader">
+        <p class="preloader-logo"><span>M</span>anu.</p>
+        <div class="preloader-bar"><span></span></div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <header class="site-nav" id="siteNav">
+        <div class="nav-inner">
+            <a href="#header" class="logo" aria-label="Manu Lalu home"><span>M</span>anu.</a>
+            <nav aria-label="Primary">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="nav-cta-item"><a href="#contact" class="nav-cta">Let’s talk</a></li>
+                    <button type="button" class="close-icon" id="closeMenu" aria-label="Close menu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon icon-moon"></i>
+                    <i class="fa-solid fa-sun icon-sun"></i>
+                </button>
+                <button type="button" class="menu-icon" id="openMenu" aria-label="Open menu" aria-controls="sidemenu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="header" class="hero">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="availability"><span class="pulse"></span> Available for freelance</p>
+                    <p class="role-tag">UI/UX Designer · Kochi</p>
+                    <h1>Hi, I’m <span>Manu Lalu</span></h1>
+                    <p class="hero-type">
+                        <span id="typed-text"></span><span class="typed-cursor" aria-hidden="true"></span>
+                    </p>
+                    <p class="hero-lead">I design and build digital products that feel effortless — blending editorial aesthetics with interfaces people actually enjoy using.</p>
+                    <div class="header-cta">
+                        <a href="#portfolio" class="btn btn-primary magnetic">View selected work</a>
+                        <a href="#contact" class="btn btn-outline magnetic">Start a project</a>
+                    </div>
+                    <div class="hero-meta">
+                        <div>
+                            <strong>03+</strong>
+                            <span>Years crafting</span>
+                        </div>
+                        <div>
+                            <strong>20+</strong>
+                            <span>Shipped projects</span>
+                        </div>
+                        <div>
+                            <strong>15+</strong>
+                            <span>Happy clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-frame">
+                        <img src="images/user.jpg" alt="">
+                    </div>
+                    <figure class="float-card card-1">
+                        <img src="images/gst-tracker.png" alt="">
+                        <figcaption>GST Tracker</figcaption>
+                    </figure>
+                    <figure class="float-card card-2">
+                        <img src="images/work-3.png" alt="">
+                        <figcaption>E-commerce</figcaption>
+                    </figure>
+                    <figure class="float-card card-3">
+                        <img src="images/work-2.png" alt="">
+                        <figcaption>Dashboard</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to about">
+                <span></span>
+                <em>Scroll</em>
+            </a>
+        </section>
+
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>UI/UX Design</span><span>Figma</span><span>Prototyping</span><span>Web Design</span><span>HTML / CSS</span><span>JavaScript</span><span>App Design</span><span>User Research</span><span>Design Systems</span><span>Responsive UI</span>
+                <span>UI/UX Design</span><span>Figma</span><span>Prototyping</span><span>Web Design</span><span>HTML / CSS</span><span>JavaScript</span><span>App Design</span><span>User Research</span><span>Design Systems</span><span>Responsive UI</span>
+            </div>
+        </div>
+
+        <section id="about">
+            <div class="container">
+                <div class="row about-row">
+                    <div class="about-col-1">
+                        <div class="img-wrapper">
+                            <img src="images/user.jpg" alt="Portrait of Manu Lalu">
+                            <div class="img-accent"></div>
+                            <p class="img-caption">Based in Kochi, India</p>
+                        </div>
+                    </div>
+                    <div class="about-col-2">
+                        <p class="section-label">01 — Who I am</p>
+                        <h2 class="sub-title">Designer who ships.</h2>
+                        <p class="about-bio">I’m a UI/UX designer and developer crafting clean, intuitive digital experiences. I blend aesthetics with functionality so products don’t just look considered — they feel obvious to use.</p>
+                        <div class="skill-chips">
+                            <span>UI/UX</span>
+                            <span>Web</span>
+                            <span>Mobile</span>
+                            <span>Figma</span>
+                            <span>Prototyping</span>
+                            <span>Front-end</span>
+                        </div>
+
+                        <div class="tab-titles" role="tablist">
+                            <button type="button" class="tab-links active-link" role="tab" aria-selected="true" data-tab="skills">Skills</button>
+                            <button type="button" class="tab-links" role="tab" aria-selected="false" data-tab="experience">Experience</button>
+                            <button type="button" class="tab-links" role="tab" aria-selected="false" data-tab="education">Education</button>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills" role="tabpanel">
+                            <ul class="detail-list">
+                                <li>
+                                    <span>UI/UX Design</span>
+                                    Designing intuitive web and app interfaces, from wireframe to polish.
+                                </li>
+                                <li>
+                                    <span>Web Development</span>
+                                    Building responsive, performant sites that hold up in the real world.
+                                </li>
+                                <li>
+                                    <span>App Design</span>
+                                    Creating native-feeling Android and iOS experiences.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience" role="tabpanel">
+                            <ul class="timeline">
+                                <li>
+                                    <span class="time">2021 — Present</span>
+                                    <strong>UI/UX Designer — Freelance</strong>
+                                    <p>End-to-end product design for startups and independent teams.</p>
+                                </li>
+                                <li>
+                                    <span class="time">Ongoing</span>
+                                    <strong>Web Development</strong>
+                                    <p>Full-stack web applications with a focus on craft and performance.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education" role="tabpanel">
+                            <ul class="timeline">
+                                <li>
+                                    <span class="time">2018 — 2022</span>
+                                    <strong>B.Tech — Computer Science</strong>
+                                </li>
+                                <li>
+                                    <span class="time">2016</span>
+                                    <strong>Diploma in Design</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Years experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="20">0</span>
+                        <span class="stat-label">Projects completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Happy clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Awards won</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="section-label">02 — What I do</p>
+                        <h2 class="sub-title">Services built around outcomes.</h2>
+                    </div>
+                    <p class="section-intro">From first sketch to shipped product — design that respects users, brands, and the people who have to build it.</p>
+                </div>
+                <div class="services-list">
+                    <article class="service-card">
+                        <span class="service-index">01</span>
+                        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Web Design</h3>
+                        <p>Responsive websites that engage visitors and convert — crafted for every screen, not squeezed onto one.</p>
+                        <ul class="service-points">
+                            <li>Marketing &amp; product sites</li>
+                            <li>Responsive systems</li>
+                            <li>Performance-minded UI</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Start a web project <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="service-card featured">
+                        <span class="service-index">02</span>
+                        <div class="service-icon"><i class="fa-solid fa-crop-simple"></i></div>
+                        <h3>UI/UX Design</h3>
+                        <p>User-centered design that blends editorial beauty with flows that feel inevitable, not clever.</p>
+                        <ul class="service-points">
+                            <li>Research &amp; flows</li>
+                            <li>Hi-fi interfaces</li>
+                            <li>Design systems</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Book a design sprint <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-index">03</span>
+                        <div class="service-icon"><i class="fa-brands fa-app-store-ios"></i></div>
+                        <h3>App Design</h3>
+                        <p>Native-feeling iOS and Android experiences that delight from first launch to daily habit.</p>
+                        <ul class="service-points">
+                            <li>Mobile patterns</li>
+                            <li>Prototype to handoff</li>
+                            <li>App Store-ready polish</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Design an app <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="process">
+            <div class="container">
+                <p class="section-label">03 — How I work</p>
+                <h2 class="sub-title">A process that stays calm.</h2>
+                <ol class="process-list">
+                    <li>
+                        <span>01</span>
+                        <h3>Discover</h3>
+                        <p>Goals, users, constraints. We get specific before a pixel is pushed.</p>
+                    </li>
+                    <li>
+                        <span>02</span>
+                        <h3>Design</h3>
+                        <p>Flows, visuals, prototypes. Tight loops until it feels right in the hand.</p>
+                    </li>
+                    <li>
+                        <span>03</span>
+                        <h3>Build</h3>
+                        <p>Clean front-end or precise handoff — whatever the project needs to ship.</p>
+                    </li>
+                    <li>
+                        <span>04</span>
+                        <h3>Launch</h3>
+                        <p>Polish, QA, and a product you’re proud to put in front of people.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="section-label">04 — Selected work</p>
+                        <h2 class="sub-title">Things I’ve made.</h2>
+                    </div>
+                    <div class="work-filters" role="tablist" aria-label="Filter projects">
+                        <button type="button" class="filter-btn active" data-filter="all">All</button>
+                        <button type="button" class="filter-btn" data-filter="product">Product</button>
+                        <button type="button" class="filter-btn" data-filter="app">Apps</button>
+                        <button type="button" class="filter-btn" data-filter="web">Web</button>
+                    </div>
+                </div>
+                <div class="work-list">
+                    <article class="work featured-work" data-category="product" data-title="GST Compliance Tracker" data-tag="Product · CA Office" data-url="https://gst-tracker-five.vercel.app/" data-stack="Angular · Node.js · Prisma · PostgreSQL" data-desc="A live filing dashboard for a chartered accountancy practice — firm-wide GST compliance, GSTR-1 / GSTR-3B tracking, staff assignment, and blockers in one place. Built end-to-end with Angular, Node.js, Prisma, and PostgreSQL.">
+                        <img src="images/gst-tracker.png" alt="GST Compliance Tracker overview dashboard">
+                        <div class="layer">
+                            <span class="work-tag">Live product · CA office</span>
+                            <h3>GST Compliance Tracker</h3>
+                            <p>Firm-wide GST filings, compliance rate, and staff workload — designed and built for a CA practice.</p>
+                            <span class="work-open" aria-hidden="true">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="work" data-category="app" data-title="Social Media App" data-tag="Mobile App" data-desc="A modern social platform with a clean, engaging UI — designed for daily use, not just first impressions.">
+                        <img src="images/work-1.png" alt="Social Media App interface">
+                        <div class="layer">
+                            <span class="work-tag">Mobile App</span>
+                            <h3>Social Media App</h3>
+                            <p>A modern social platform with a clean, engaging UI.</p>
+                            <span class="work-open" aria-hidden="true">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="work" data-category="app" data-title="Service Center App" data-tag="Dashboard" data-desc="A streamlined service management system — reducing noise so operators can act, not hunt.">
+                        <img src="images/work-2.png" alt="Service Center App dashboard">
+                        <div class="layer">
+                            <span class="work-tag">Dashboard</span>
+                            <h3>Service Center App</h3>
+                            <p>A streamlined service management system interface.</p>
+                            <span class="work-open" aria-hidden="true">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="work" data-category="web" data-title="E-commerce Site" data-tag="Web Design" data-desc="A refined shopping experience built for conversions, with editorial product storytelling.">
+                        <img src="images/work-3.png" alt="E-commerce website design">
+                        <div class="layer">
+                            <span class="work-tag">Web Design</span>
+                            <h3>E-commerce Site</h3>
+                            <p>A refined shopping experience built for conversions.</p>
+                            <span class="work-open" aria-hidden="true">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </span>
+                        </div>
+                    </article>
+                </div>
+                <div class="portfolio-cta">
+                    <a href="#contact" class="btn btn-primary magnetic">Have a project in mind?</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="row contact-row">
+                    <div class="contact-left">
+                        <p class="section-label">05 — Let’s talk</p>
+                        <h2 class="sub-title">Tell me what you’re building.</h2>
+                        <p class="contact-intro">Have a product, a redesign, or a half-formed idea? I read every message. Let’s make something people remember.</p>
+
+                        <div class="contact-details">
+                            <a href="mailto:manulalu722@gmail.com" class="contact-item">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>
+                                    <small>Email</small>
+                                    manulalu722@gmail.com
+                                </span>
+                            </a>
+                            <a href="tel:+919961993500" class="contact-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>
+                                    <small>Phone</small>
+                                    +91 9961 993 500
+                                </span>
+                            </a>
+                            <p class="contact-item location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>
+                                    <small>Studio</small>
+                                    Kochi, India
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/Resume.pdf" download class="btn btn-outline">
+                            <i class="fa-solid fa-download"></i> Download resume
+                        </a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet" novalidate>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input id="name" type="text" name="Name" placeholder="Your name" required autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input id="email" type="email" name="Email" placeholder="you@studio.com" required autocomplete="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Project</label>
+                                <textarea id="message" name="Message" rows="6" placeholder="What are you trying to make, and for whom?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width">
+                                Send message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <span id="msg" role="status" aria-live="polite"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="#header" class="logo"><span>M</span>anu.</a>
+            <p>Crafted with care in Kochi · © 2026 Manu Lalu</p>
+            <a href="#header" class="footer-top">Back to top</a>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" hidden>
+        <div class="lightbox-backdrop" data-close></div>
+        <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+            <button type="button" class="lightbox-close" data-close aria-label="Close project">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="lightboxImg" alt="">
+            <div class="lightbox-meta">
+                <span class="work-tag" id="lightboxTag"></span>
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxStack" class="lightbox-stack" hidden></p>
+                <p id="lightboxDesc"></p>
+                <div class="lightbox-actions">
+                    <a id="lightboxLive" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer" hidden>Open live site</a>
+                    <a href="#contact" class="btn btn-outline" data-close>Discuss a similar project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
